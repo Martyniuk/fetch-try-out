@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fetch</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style>
+        .visible {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Fetch try out</h1>
+            <button id="getText" class="btn btn-info">Get Text</button>
+            <button id="getUsers" class="btn btn-info">Get Users</button>
+            <button id="getPosts" class="btn btn-info">Get Posts</button>
+            <button id="getPost" class="btn btn-info">Get POST</button>
+            <div id="output"></div>
+            <!-- form for POST request-->
+            <form id="addPost" class="visible">
+                <div class="form-group">
+                    <input class="form-control" type="text" id="title" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="body" placeholder="Body"></textarea>
+                </div>
+                <input class="btn btn-secondary" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
